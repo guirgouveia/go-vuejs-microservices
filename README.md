@@ -24,7 +24,12 @@ You can run this project locally using `Docker` or `Kubernetes` or you can deplo
 
 - [Docker](https://docs.docker.com/install/)
 - [Docker Compose](https://docs.docker.com/compose/install/)
-- `Kubernetes Cluster` ( optional )
+
+#### Optional
+
+If you want to run the project using `Kubernetes` you need to install the following tools:
+
+- `Kubernetes Cluster`
 - [Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
 - [Skaffold](https://skaffold.dev/docs/install/)
 - [Helm](https://helm.sh/docs/intro/install/)
