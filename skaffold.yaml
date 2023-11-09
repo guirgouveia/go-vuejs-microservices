@@ -1,0 +1,71 @@
+apiVersion: skaffold/v4beta7
+kind: Config
+metadata:
+  name: app
+build:
+  local:
+    # Tell Skaffold to skip pushing image to a registry
+    # and importing the image directly into the local cluster for testing
+    push: true
+    # The following instructions tell Skaffold to use the 
+    # local Docker daemon to build the image.
+    useDockerCLI: false
+    useBuildkit: false
+    # Import missing artifacts from the local Docker daemon.
+    # This should be taken into consideration for vulnerabilities. 
+    # https://skaffold.dev/docs/builders/build-environments/local/#build-avoidance-with-tryimportmissing
+    tryImportMissing: false
+  tagPolicy:
+    gitCommit:
+      prefix: local
+  artifacts:
+    - image: grgouveia/app
+      context: ./app
+      docker:
+        dockerfile: Dockerfile
+deploy:
+  kubeContext: docker-desktop
+  kubectl: {}
+  helm:
+    releases:
+    - name: mysql-db
+      namespace: mysql
+      remoteChart: bitnami/mysql
+      version: 9.14.1
+      valuesFiles:
+        - "kubernetes/helm/mysql/values.yaml"
+        - "kubernetes/helm/mysql/secrets.enc.yaml"
+      useHelmSecrets: true
+manifests:
+  kustomize:
+    paths:
+    - kubernetes/manifests/app
+  # TODO: when the Helm Charts are ready
+  # helm:
+  #   releases:
+  #     - name: app
+  #       namespace: app
+  #       chartPath: kubernetes/helm/app/helmcharts
+  #       valuesFiles:
+  #         - kubernetes/helm/app/values.yaml
+  #       # This overrides the image tag whose default is the one in the values.yaml file.
+  #       # with the image tag from the Skaffold build config.
+  #       setValueTemplates:
+  #         image.tag: "{{.IMAGE_TAG}}"
+  #       version: 0.1.0
+portForward:
+  - resourceType: service
+    resourceName: app
+    port: 8080
+    localPort: 8084
+profiles:
+- name: prod
+  manifests:
+    kustomize:
+      paths:
+      - kubernetes/manifests/app/overlays/prod
+- name: staging
+  manifests:
+    kustomize:
+      paths:
+      - kubernetes/manifests/app/overlays/staging

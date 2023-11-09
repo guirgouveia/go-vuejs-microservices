@@ -10,6 +10,10 @@ The `webserver.go` file is the entrypoint for the backend and it handles incomin
 
 ## Building the app
 
+This project tests the application using Docker and Skaffold. The advantage is that you don't need to install Go or MySQL in your machine.
+
+Furthermore, if you run with Skaffold, it will create a local CICD pipeline that will automatically rebuild and redeploy the app everytime you change the code.
+
 To build the app you need to run the following command:
 
 ```bash
