@@ -1,23 +1,27 @@
-# Task 1: Dockerize
-### Exercise Goals
+# App Microservice 
 
-This is your first task in out assignment. Here you are supposed to build a Dockfile with a Go Webserver within. 
+This is a Golang app that uses Vue.js in the frontend and MySQL as the database.
 
-* Create a `Dockerfile`;
-  * Build `golang` executable inside your `Dockerfile`;
-  * Let the executable run as you load the image;
-* Build a `Docker` image using your `Dockerfile`;
-* Run your new created image and get a `200` HTTP Code once your container is running;
+It currently contains both the backend and the frontend in the same repository, but the idea is to decouple them in the future.
 
-### Expected Output
+## Understanding the code
 
-Please, provide us with the `Dockerfile` you created. Your `Dockerfile` is supposed to:
-* Copy our source code inside this folder to the image;
-* Build the binary from our source code inside the image;
-* Run the binary at the end of the image;
+The `webserver.go` file is the entrypoint for the backend and it handles incoming requests, serving the static files for the Vue.js frontend at [src](./src) and invoking the [packages](./webserver) at the [webserver](./webserver) folder. It contain the logic that handle the requests, connecting to the database and returning the data.
 
-[Optional] You can also share screenshots of your progress.
+## Building the app
 
-### Next steps?
+To build the app you need to run the following command:
 
-Once you complete this task, you can proceed to the [Kubernetes](../kubernetes) task;
+```bash
+go build -o app
+```
+
+## Running the app
+
+To run the app you need to run the following command:
+
+```bash
+./app
+```
+
+To run with Docker or Skaffold, read the [Getting Started](#getting-started) section.
