@@ -9,6 +9,12 @@ These are some ideas of features that I want to implement in this project. I wil
 - [x] Docker compose for local development
 - [x] Skaffold for local development
 
+## Improve
+
+- [ ] Health Check Endpoint
+- [ ] Readiness and Liveness Probes
+- [ ] Kubernetes Lifecycle Hooks
+
 ## To Do
 
 - [ ] Decoupling frontend and backend
@@ -16,9 +22,6 @@ These are some ideas of features that I want to implement in this project. I wil
 - [ ] Authorization
 - [ ] SSO ( GitHub, etc. )
 - [ ] Configuration
-- [ ] Health Check Endpoint
-- [ ] Readiness and Liveness Probes
-- [ ] Kubernetes Lifecycle Hooks
 - [ ] CI/CD
 - [ ] Metrics
 - [ ] Tracing
