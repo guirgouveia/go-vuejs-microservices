@@ -18,6 +18,7 @@ These are some ideas of features that I want to implement in this project. I wil
 ## To Do
 
 - [ ] Decoupling frontend and backend
+- [ ] Mock data
 - [ ] Authentication
 - [ ] Authorization
 - [ ] SSO ( GitHub, etc. )
