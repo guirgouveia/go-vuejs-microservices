@@ -23,13 +23,12 @@ These are some ideas of features that I want to implement in this project. I wil
 - [ ] Authentication
 - [ ] Authorization
 - [ ] SSO ( GitHub, etc. )
-- [ ] Configuration
-- [ ] CI/CD
+- [ ] Tests ( Unit, Integration, End-to-End, Stress )
 - [ ] Metrics
 - [ ] Tracing
+- [ ] CI/CD
+- [ ] API best practices ( documentation, gateway, versioning, security, performance, scalability, documentation, client, , testing, mocking, analytics, management, design, lifecycle, governance, standards, testing )
 - [ ] Streaming data
-- [ ] API best practices ( documentation, versioning, security, performance, scalability, documentation, client, gateway, testing, mocking, analytics, management, design, lifecycle, governance, standards, testing )
-- [ ] Tests ( Unit, Integration, End-toEnd, Stress )
 - [ ] Caching
 - [ ] Rate limiting
 - [ ] Security
