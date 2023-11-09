@@ -36,6 +36,12 @@ If you want to run the project using `Kubernetes` you need to install the follow
 
 > Remember that if you use minikube, you need to use the [minikube docker daemon](https://minikube.sigs.k8s.io/docs/handbook/pushing/) to build the images. Skaffold can do this for you automatically.
 
+## Getting Started
+
+This project tests the application using Docker and Skaffold. The advantage is that you don't need to install Go or MySQL in your machine.
+
+Furthermore, if you run with Skaffold, it will create a local CICD pipeline that will automatically rebuild and redeploy the app everytime you change the code.
+
 ### Running with Docker Compose
 
 To run the project locally using `Docker Compose` you need to run the following command:
