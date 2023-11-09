@@ -14,11 +14,12 @@ These are some ideas of features that I want to implement in this project. I wil
 - [ ] Health Check Endpoint
 - [ ] Readiness and Liveness Probes
 - [ ] Kubernetes Lifecycle Hooks
+- [ ] Mock data ( currently using [mysql-init script](./_assets/config/mysql-init.sh) )
 
 ## To Do
 
 - [ ] Decoupling frontend and backend
-- [ ] Mock data
+- [ ] Error handling & Logging
 - [ ] Authentication
 - [ ] Authorization
 - [ ] SSO ( GitHub, etc. )
@@ -26,7 +27,6 @@ These are some ideas of features that I want to implement in this project. I wil
 - [ ] CI/CD
 - [ ] Metrics
 - [ ] Tracing
-- [ ] Error handling & Logging
 - [ ] Streaming data
 - [ ] API best practices ( documentation, versioning, security, performance, scalability, documentation, client, gateway, testing, mocking, analytics, management, design, lifecycle, governance, standards, testing )
 - [ ] Tests ( Unit, Integration, End-toEnd, Stress )
