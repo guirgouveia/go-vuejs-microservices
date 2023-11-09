@@ -6,7 +6,7 @@ This project creates a personal blog with Golang microservices in the backend an
 
 The project is still in the early stages of development, so there is a lot of work to do, for example, the frontend is still not decoupled from the backend.
 
-Take a look at the [Roadmap](./docs/roadmap.md) file to see the features that are being developed.
+Take a look at the [Roadmap](./docs/roadmap.md) to see the features that are being developed.
 
 The services are be designed to reside in the cloud from the start, so Kubernetes Manifets and Helm Charts are being developed along with the code.
 
