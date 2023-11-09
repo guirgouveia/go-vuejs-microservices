@@ -4,11 +4,11 @@ This project creates a personal blog with Golang microservices in the backend an
 
 ## Roadmap
 
-The project is still in the early stages of development, so there is a lot of work to do, for example, the frontend is still not decoupled from the backend.
-
 Take a look at the [Roadmap](./docs/roadmap.md) to see the features that are being developed.
 
-The services are be designed to reside in the cloud from the start, so Kubernetes Manifets and Helm Charts are being developed along with the code.
+The project is still in the early stages of development, so there is a lot of work to do, for example, the frontend is still not decoupled from the backend.
+
+The services are be designed to be [Cloud Native](https://aws.amazon.com/what-is/cloud-native/#:~:text=The%20term%20cloud%20native%20refers,container%20orchestrators%2C%20and%20auto%20scaling.), residing in the cloud from the start, so Kubernetes Manifets and Helm Charts are being developed along with the code.
 
 ## Services
 
