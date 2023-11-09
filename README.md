@@ -1,6 +1,6 @@
 # Go Blog with Vue.js
 
-This project creates a personal blog with Golang microservices in the backend and Vue.js in the frontend connecting to a MySQL database.
+This project creates a simple personal blog with Golang microservices in the backend and Vue.js in the frontend connecting to a MySQL database.
 
 ## Roadmap
 
