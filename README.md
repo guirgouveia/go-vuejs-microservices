@@ -29,10 +29,12 @@ You can run this project locally using `Docker` or `Kubernetes` or you can deplo
 
 If you want to run the project using `Kubernetes` you need to install the following tools:
 
-- `Kubernetes Cluster`
+- `minikube`, `Docker Desktop`, `kind`, `k3s` or any other Kubernetes distribution
 - [Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
 - [Skaffold](https://skaffold.dev/docs/install/)
 - [Helm](https://helm.sh/docs/intro/install/)
+
+> Remember that if you use minikube, you need to use the [minikube docker daemon](https://minikube.sigs.k8s.io/docs/handbook/pushing/) to build the images. Skaffold can do this for you automatically.
 
 ### Running with Docker Compose
 
