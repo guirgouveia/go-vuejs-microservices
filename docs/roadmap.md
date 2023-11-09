@@ -14,6 +14,7 @@ These are some ideas of features that I want to implement in this project. I wil
 - [ ] Decoupling frontend and backend
 - [ ] Authentication
 - [ ] Authorization
+- [ ] SSO ( GitHub, etc. )
 - [ ] Configuration
 - [ ] Health Check Endpoint
 - [ ] Readiness and Liveness Probes
