@@ -14,7 +14,7 @@ These are some ideas of features that I want to implement in this project. I wil
 - [ ] Health Check Endpoint
 - [ ] Readiness and Liveness Probes
 - [ ] Kubernetes Lifecycle Hooks
-- [ ] Mock data ( currently using [mysql-init script](./_assets/config/mysql-init.sh) )
+- [ ] Mock data ( currently using [mysql-init script](./config/mysql-init.sh) )
 
 ## To Do
 
